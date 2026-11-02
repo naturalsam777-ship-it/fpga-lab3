@@ -12,7 +12,6 @@ module tb_top;
   $readmemh("sim/expected_frame.hex",reference);
   fd=$fopen("evidence/actual_frame.hex","w");
   #100;sys_rst_n=1;
-  // Reset begins between clock edges while the M is being scanned.
   #24587417;
   if(rgb!==16'hffff) $fatal(1,"reset stimulus must interrupt a white stroke");
   sys_rst_n=0;#1;
