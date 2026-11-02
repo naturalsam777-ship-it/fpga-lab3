@@ -14,9 +14,7 @@ module tb_detail;
    dut.u_ctrl.pix_data_req,dut.pix_x,dut.pix_y,dut.pix_data);
   #500;$dumpoff;
   #1119400;$dumpon;#33000;$dumpoff;
-  // v=243: screen y=208, first bitmap row.
   #6623000;$dumpon;#33000;$dumpoff;
-  // Last addressable line, v=514.
   #8639000;$dumpon;#33000;$dumpoff;
   #8106500;$dumpon;#1000;$dumpoff;
   #19999000;$dumpon;#1000;$dumpoff;
